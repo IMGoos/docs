@@ -1,0 +1,80 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "VangardPay Docs",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#32329f",
+    "light": "#32329f",
+    "dark": "#1d8102"
+  },
+  "topbarLinks": [
+    {
+      "name": "Merchant Panel",
+      "url": "https://merchant.vangard.pay"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Официальный сайт",
+    "url": "https://vangard.pay"
+  },
+  "navigation": [
+    {
+      "group": "Начало работы",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "group": "Orders",
+      "pages": [
+        "orders/создание-заказа-через-api",
+        "orders/получение-статуса-заказа"
+      ]
+    },
+    {
+      "group": "Merchant",
+      "pages": [
+        "merchant/получение-баланса-мерчанта",
+        "merchant/получение-списка-поддерживаемых-банков",
+        "merchant/создание-заявки-на-вывод-средств"
+      ]
+    },
+    {
+      "group": "Appeals",
+      "pages": [
+        "appeals/получение-списка-апелляций",
+        "appeals/создание-новой-апелляции",
+        "appeals/получение-апелляции-по-id",
+        "appeals/загрузка-файлов-для-апелляции",
+        "appeals/обновление-статуса-апелляции",
+        "appeals/получение-статистики-апелляций",
+        "appeals/трейдер-отклоняет-апелляцию-с-доказательствами",
+        "appeals/трейдер-одобряет-апелляцию"
+      ]
+    },
+    {
+      "group": "Payments",
+      "pages": [
+        "payments/создание-платёжной-сессии",
+        "payments/получить-информацию-о-сессии",
+        "payments/получить-доступные-методы-оплаты",
+        "payments/создать-ордер-клиент-выбрал-сумму-и-метод",
+        "payments/отменить-платёж",
+        "payments/получить-статус-ордера",
+        "payments/подтвердить-оплату-клиент-нажал-\"я-оплатил\"",
+        "payments/отправить-событие-аналитики",
+        "payments/создать-апелляцию"
+      ]
+    }
+  ],
+  "api": {
+    "baseUrl": "https://api.vangard.pay",
+    "auth": {
+      "method": "bearer"
+    }
+  }
+}
